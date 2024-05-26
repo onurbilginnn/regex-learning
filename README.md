@@ -54,9 +54,11 @@ grep '[j-mz]oo' ./module1/regex07.txt
 [j-mJ-Mz]oo -> Finds all joo, koo, loo, moo, Joo, Koo, Loo, Moo, zoo from character j to m and J to M and z all characters included <br>
 grep '[j-mJ-Mz]oo' ./module1/regex08.txt
 
-- x*\\.y* Zero or more occurences of x with following .(dot) following Zero or more occurences of y (xxx.yyy or x.y or .y etc) <br>
+- x*\\.y* Zero or more occurences of x with following .(period) following Zero or more occurences of y (xxx.yyy or x.y or .y etc) <br>
 Following characters should be escaped with a backlash as these characters have special meaning otherwise: ^$*.[()\ <br>
-grep 'x\*\\.y\*' ./module1/regex09.txt
+if a .(period) inside square brackets, it need NOT be escaped <br>
+grep 'x\*\\.y\*' ./module1/regex09.txt <br>
+grep '[#:.]' ./module1/regex10.txt
 
 - ^pattern -> ^ is an anchor tag that represents the beginning of the line<br>
 - pattern$ -> $ is an anchor tag that represents the end of the line<br>
