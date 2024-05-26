@@ -61,9 +61,9 @@ If any of the characters ^ or - appear inside square brackets, it needs to be es
 The backslash it self should always be escaped with a backslash, irrespective of its position within the regex <br>
 grep 'x\*\\.y\*' ./module1/regex09.txt <br>
 grep '[#:.]' ./module1/regex10.txt <br>
-grep '[\^#:]' ./module1/regex11.txt <br>
-grep '[\^#\\]' ./module1/regex12.txt <br>
-grep 'x*\\' ./module1/regex12.txt
+grep '[\\^#:]' ./module1/regex11.txt <br>
+grep '[\\^#\\]' ./module1/regex12.txt <br>
+grep 'x\*\\' ./module1/regex12.txt
 
 - ^pattern -> ^ is an anchor tag that represents the beginning of the line<br>
 - pattern$ -> $ is an anchor tag that represents the end of the line<br>
