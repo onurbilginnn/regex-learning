@@ -1,0 +1,8 @@
+foo
+coo
+moo
+doo
+poo
+loo
+boo
+hoo
