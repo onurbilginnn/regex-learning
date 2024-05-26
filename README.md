@@ -59,7 +59,7 @@ Following characters should be escaped with a backlash as these characters have 
 If a .(period) inside square brackets, it need NOT be escaped <br>
 If any of the characters ^ or - appear inside square brackets, it needs to be escaped with a backslash as these 2 characters have special meaning inside square brackets <br>
 The backslash it self should always be escaped with a backslash, irrespective of its position within the regex <br>
-grep 'x\*\\.y\*' ./module1/regex09.txt <br>
+grep 'x&#42;&#92;.y&#42;' ./module1/regex09.txt <br>
 grep '[#:.]' ./module1/regex10.txt <br>
 grep '[\^#:]' ./module1/regex11.txt <br> 
 grep '[\^#\\]' ./module1/regex12.txt <br>
