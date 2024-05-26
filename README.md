@@ -62,8 +62,8 @@ The backslash it self should always be escaped with a backslash, irrespective of
 grep 'x&#42;&#92;.y&#42;' ./module1/regex09.txt <br>
 grep '[#:.]' ./module1/regex10.txt <br>
 grep '[^#:]' ./module1/regex11.txt <br> 
-grep '[^#&#92;&#92;]' ./module1/regex12.txt <br>
-grep 'x*&#92;&#92;' ./module1/regex12.txt
+grep '[^#\&#92;&#92;]' ./module1/regex12.txt <br>
+grep 'x&#42;&#92;&#92;' ./module1/regex12.txt
 
 - ^pattern -> ^ is an anchor tag that represents the beginning of the line<br>
 - pattern$ -> $ is an anchor tag that represents the end of the line<br>
