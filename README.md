@@ -15,7 +15,7 @@ Almost all Regex engines are POSIX (Portable Operating System Interface) standar
 4- Use a regex engine (Grep, JS, Java, etc..) to apply regex pattern on the input
 
 ### Regex: The Basic Set
-- "*" -> Zero or more occurences of the character that precedes this asterisk
+- "\*" -> Zero or more occurences of the character that precedes this asterisk
 "a*" -> Zero or more occurences of 'a' (The character just preceding the asterisk)
 Example: "fooa*bar" -> selects foo that is followed by the character a or no character -> foobar, fooabar, fooaaaaaa..bar etc..
 Linux terminal command: grep 'fooa*bar' regex01.txt (Executes Regex search 'fooa*bar' in regex01.txt file)
@@ -25,7 +25,7 @@ Linux terminal command: grep 'fooa*bar' regex01.txt (Executes Regex search 'fooa
 "foo..bar" All foo that are followed by any 2 characters (fooxdbar, foowhbar etc)
 grep 'fooa.bar' regex02.txt
 
-- ".*" -> Zero or more occurences of wildcard, which means zero or more occurences of any character
+- ".\*" -> Zero or more occurences of wildcard, which means zero or more occurences of any character
 "foo.*bar" All foo that are followed by any character or no character(foobar, fooxbar, fooqbar etc)
 grep 'foo.*bar' regex03.txt
 
