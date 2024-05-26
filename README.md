@@ -58,14 +58,14 @@ grep '[j-mz]oo' ./module1/regex07.txt
 [j-mJ-Mz]oo -> Finds all joo, koo, loo, moo, Joo, Koo, Loo, Moo, zoo from character j to m and J to M and z all characters included <br>
 grep '[j-mJ-Mz]oo' ./module1/regex08.txt
 
-- x*\.y* Zero or more occurences of x with following .(period) following Zero or more occurences of y (xxx.yyy or x.y or .y etc) <br>
-Following characters should be escaped with a backlash as these characters have special meaning otherwise: ^$*.[()\ <br>
+- Following characters should be escaped with a backlash as these characters have special meaning otherwise: ^$*.[()\ <br>
+x*\.y* Zero or more occurences of x with following .(period) following Zero or more occurences of y (xxx.yyy or x.y or .y etc) <br>
+grep 'x*\.y*' ./module1/regex09.txt <br>
 If a .(period) inside square brackets, it need NOT be escaped <br>
-If any of the characters ^ or - appear inside square brackets, it needs to be escaped with a backslash as these 2 characters have special meaning inside square brackets <br>
-The backslash it self should always be escaped with a backslash, irrespective of its position within the regex <br>
-grep 'x&#42;&#92;.y&#42;' ./module1/regex09.txt <br>
 grep '[#:.]' ./module1/regex10.txt <br>
-grep '[^#:]' ./module1/regex11.txt <br> 
+If any of the characters ^ or - appear inside square brackets, it needs to be escaped with a backslash as these 2 characters have special meaning inside square brackets <br>
+grep '[\^#:]' ./module1/regex11.txt <br> 
+The backslash it self should always be escaped with a backslash, irrespective of its position within the regex <br>
 grep 'x[\^#\\]' ./module1/regex12.txt <br>
 grep 'x*\\' ./module1/regex12.txt
 
