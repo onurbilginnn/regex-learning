@@ -1,6 +1,4 @@
-```diff
-- Please check raw text in order to see actual regex code !!!
-```
+> :warning: Please check raw text in order to see actual regex code !!!
 
 ## REGEX
 
