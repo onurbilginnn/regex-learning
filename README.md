@@ -19,7 +19,7 @@ Almost all Regex engines are POSIX (Portable Operating System Interface) standar
 4- Use a regex engine (Grep, JS, Java, etc..) to apply regex pattern on the input
 
 ### Regex: The Basic Set
-- \* -> Zero or more occurences of the character that precedes this asterisk <br>
+- * -> Zero or more occurences of the character that precedes this asterisk <br>
 a* -> Zero or more occurences of 'a' (The character just preceding the asterisk) <br>
 Example: fooa*bar -> selects foo that is followed by the character a or no character -> foobar, fooabar, fooaaaaaa..bar etc.. <br>
 Linux terminal command: grep 'fooa*bar' ./module1/regex01.txt (Executes Regex search 'fooa*bar' in regex01.txt file)
