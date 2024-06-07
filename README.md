@@ -142,7 +142,7 @@ Only one of m, n is mandatory. Other can be left blank. <br>
 - ./module3/regex03.txt
 - Group capture -> ([0-9]{1,2}):([0-9]{2}) -> Gives 2:59, 12:30, etc...
 - Replace -> \2 mins past \1
-- 1st cmd: sed -r 's/([0-9]{1,2}):([0-9]{2})/\2 mins past \1/g' ./module3/regex03.txt
+- cmd: sed -r 's/([0-9]{1,2}):([0-9]{2})/\2 mins past \1/g' ./module3/regex03.txt
 
 #### Phone Numbers
 - ./module3/regex04.txt
