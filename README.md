@@ -160,7 +160,8 @@ Only one of m, n is mandatory. Other can be left blank. <br>
 - ./module3/regex06.txt
 - Group capture -> \(([0-9]{3})\).([0-9]{3}).([0-9]{4}) -> Gives (692).217.7432, (556).342.7590, etc...
 - Replace -> \1.\2.\3
-- cmd: sed -r 's/\(([0-9]{3})\).([0-9]{3}).([0-9]{4})/\1.\2.\3/g' ./module3/regex06.txt
+- 1st cmd: sed -r 's/\(([0-9]{3})\).([0-9]{3}).([0-9]{4})/\1.\2.\3/g' ./module3/regex06.txt
+- 2nd cmd: sed -r 's/\(([0-9]{3}))(\.[0-9]{3}\.[0-9]{3})/\1\2/g' ./module3/regex06.txt
 
 #### Challenge
 - ./challenge/regex01.txt
