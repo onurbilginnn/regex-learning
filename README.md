@@ -62,8 +62,8 @@ Linux terminal command: ```grep 'fooa*bar' ./module1/regex01.txt``` (Executes Re
 ```x*\.y*``` -> Zero or more occurences of x with following .(period) following Zero or more occurences of y (xxx.yyy or x.y or .y etc) <br>
 ```grep 'x*\.y*' ./module1/regex09.txt``` <br>
 If a .(period) inside square brackets, it need NOT be escaped <br>
-grep '[#:.]' ./module1/regex10.txt <br>
-If any of the characters ^ or - appear inside square brackets, it needs to be escaped with a backslash as these 2 characters have special meaning inside square brackets <br>
+```grep '[#:.]' ./module1/regex10.txt``` <br>
+If any of the characters `^` or `-` appear inside square brackets, it needs to be escaped with a backslash as these 2 characters have special meaning inside square brackets <br>
 grep '[\^#:]' ./module1/regex11.txt <br> 
 The backslash it self should always be escaped with a backslash, irrespective of its position within the regex <br>
 grep 'x[\^#\\]' ./module1/regex12.txt <br>
